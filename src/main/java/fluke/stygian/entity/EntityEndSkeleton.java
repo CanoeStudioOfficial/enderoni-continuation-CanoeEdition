@@ -1,7 +1,7 @@
 package fluke.stygian.entity;
 
+import fluke.stygian.Stygian;
 import fluke.stygian.block.ModBlocks;
-import fluke.stygian.util.Reference;
 import net.minecraft.entity.monster.EntitySkeleton;
 import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
@@ -45,7 +45,7 @@ public class EntityEndSkeleton extends EntitySkeleton {
     protected void dropLoot(boolean wasRecentlyHit, int lootingModifier, DamageSource source) {
 
         LootTable loottable = world.getLootTableManager()
-                .getLootTableFromLocation(new ResourceLocation(Reference.MOD_ID + ":entities/end_skeleton"));
+                .getLootTableFromLocation(new ResourceLocation(Stygian.MOD_ID + ":entities/end_skeleton"));
 
         LootContext.Builder builder = new LootContext.Builder((WorldServer) world);
 

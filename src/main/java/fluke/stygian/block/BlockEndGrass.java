@@ -1,6 +1,6 @@
 package fluke.stygian.block;
 
-import fluke.stygian.util.Reference;
+import fluke.stygian.Stygian;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -17,7 +17,6 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
-
 public class BlockEndGrass extends Block  implements ITickable {
 	public static final String REG_NAME = "endgrass";
 	private int ticks;
@@ -28,7 +27,7 @@ public class BlockEndGrass extends Block  implements ITickable {
 		this.setSoundType(SoundType.GROUND);
 		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 		this.setHardness(0.5F);
-		setTranslationKey(Reference.MOD_ID + ".endgrass");
+		setTranslationKey(Stygian.MOD_ID + ".endgrass");
 		setRegistryName(REG_NAME);
 	}
 

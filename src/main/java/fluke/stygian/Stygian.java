@@ -2,7 +2,7 @@ package fluke.stygian;
 
 import fluke.stygian.entity.EntityEndSkeleton;
 import fluke.stygian.proxy.CommonProxy;
-import fluke.stygian.util.Reference;
+import fluke.stygian.stygian.Tags;
 import fluke.stygian.world.BiomeRegistrar;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -24,14 +24,14 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptableRemoteVersions = "*")
+@Mod(modid = Tags.MOD_ID, name = Tags.MOD_NAME, version = Tags.VERSION, acceptableRemoteVersions = "*")
 public class Stygian {
-    public static final Logger LOGGER = LogManager.getLogger(Reference.MOD_ID);
-
+    public static final Logger LOGGER = LogManager.getLogger(Stygian.MOD_ID);
+    public static final String MOD_ID = Tags.MOD_ID;
     @Instance
     public static Stygian instance;
 
-    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
+    @SidedProxy(clientSide = "fluke.stygian.proxy.ClientProxy", serverSide = "fluke.stygian.proxy.CommonProxy")
     public static CommonProxy proxy;
 
     static {
@@ -43,7 +43,7 @@ public class Stygian {
         proxy.init();
         BiomeRegistrar.registerBiomes();
         // Register EntityEndSkeleton as a spawnable entity
-        EntityRegistry.registerModEntity(new ResourceLocation(Reference.MOD_ID, "end_skeleton"), EntityEndSkeleton.class, "end_skeleton", 1, Reference.MOD_ID, 64, 1, true, 8553090, 2302755);
+        EntityRegistry.registerModEntity(new ResourceLocation(Stygian.MOD_ID, "end_skeleton"), EntityEndSkeleton.class, "end_skeleton", 1, Stygian.MOD_ID, 64, 1, true, 8553090, 2302755);
         CreativeTabStygian.SPAWN_EGGS.add(getSpawnEgg("end_skeleton"));
     }
 
@@ -65,7 +65,7 @@ public class Stygian {
     public static ItemStack getSpawnEgg(String entityName) {
         ItemStack stack = new ItemStack(Items.SPAWN_EGG);
         NBTTagCompound nbt = new NBTTagCompound();
-        nbt.setString("id", Reference.MOD_ID + ":" + entityName);
+        nbt.setString("id", Stygian.MOD_ID + ":" + entityName);
         NBTTagCompound nbt2 = new NBTTagCompound();
         nbt2.setTag("EntityTag", nbt);
         stack.setTagCompound(nbt2);

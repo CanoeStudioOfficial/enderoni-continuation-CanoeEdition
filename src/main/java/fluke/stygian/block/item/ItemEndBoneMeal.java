@@ -1,7 +1,7 @@
 package fluke.stygian.block.item;
 
+import fluke.stygian.Stygian;
 import fluke.stygian.block.ModBlocks;
-import fluke.stygian.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -23,7 +23,7 @@ public class ItemEndBoneMeal extends Item {
     public static final String REG_NAME = "endbonemeal";
 
     public ItemEndBoneMeal() {
-        setTranslationKey(Reference.MOD_ID + ".endbonemeal");
+        setTranslationKey(Stygian.MOD_ID + ".endbonemeal");
         setRegistryName(REG_NAME);
     }
 

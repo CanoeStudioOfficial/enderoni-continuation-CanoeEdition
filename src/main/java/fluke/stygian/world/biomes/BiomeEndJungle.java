@@ -1,7 +1,5 @@
 package fluke.stygian.world.biomes;
 
-import java.util.Random;
-
 import fluke.stygian.block.ModBlocks;
 import fluke.stygian.config.Configs;
 import fluke.stygian.world.feature.WorldGenEndPlant;
@@ -19,6 +17,8 @@ import net.minecraft.world.biome.BiomeEndDecorator;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+
+import java.util.Random;
 
 public class BiomeEndJungle extends Biome
 {

@@ -1,8 +1,6 @@
 package fluke.stygian.block;
 
-import java.util.Random;
-
-import fluke.stygian.util.Reference;
+import fluke.stygian.Stygian;
 import fluke.stygian.world.feature.WorldGenEnderCanopy;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
@@ -25,6 +23,8 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import java.util.Random;
+
 public class BlockEndCanopySapling extends BlockBush implements IGrowable
 {
 	public static final String REG_NAME = "endcanopysapling";
@@ -35,7 +35,7 @@ public class BlockEndCanopySapling extends BlockBush implements IGrowable
     {
         this.setDefaultState(this.blockState.getBaseState().withProperty(STAGE, Integer.valueOf(0)));
         this.setCreativeTab(CreativeTabs.DECORATIONS);
-        setTranslationKey(Reference.MOD_ID + ".endcanopysapling");
+        setTranslationKey(Stygian.MOD_ID + ".endcanopysapling");
         setRegistryName(REG_NAME);
     }
     

@@ -1,6 +1,6 @@
 package fluke.stygian.block;
 
-import fluke.stygian.util.Reference;
+import fluke.stygian.Stygian;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -22,7 +22,7 @@ public class BlockEnderObsidian extends Block
         this.setHardness(50.0F);
         this.setResistance(2000.0F);
         this.setSoundType(SoundType.STONE);
-        setTranslationKey(Reference.MOD_ID + ".endobsidian");
+        setTranslationKey(Stygian.MOD_ID + ".endobsidian");
 		setRegistryName(REG_NAME);
     }
 	

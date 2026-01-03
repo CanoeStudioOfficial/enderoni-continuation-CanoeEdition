@@ -1,10 +1,6 @@
 package fluke.stygian.block;
 
-import java.util.Random;
-
-import javax.annotation.Nullable;
-
-import fluke.stygian.util.Reference;
+import fluke.stygian.Stygian;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.SoundType;
@@ -28,6 +24,8 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import javax.annotation.Nullable;
+import java.util.Random;
 public class BlockEndTallGrass extends BlockBush implements net.minecraftforge.common.IShearable
 {
     protected static final AxisAlignedBB TALL_GRASS_AABB = new AxisAlignedBB(0.09999999403953552D, 0.0D, 0.09999999403953552D, 0.8999999761581421D, 0.800000011920929D, 0.8999999761581421D);
@@ -37,7 +35,7 @@ public class BlockEndTallGrass extends BlockBush implements net.minecraftforge.c
     {
     	super(Material.VINE, MapColor.PURPLE);
     	this.setSoundType(SoundType.PLANT);
-        setTranslationKey(Reference.MOD_ID + ".endtallgrass");
+        setTranslationKey(Stygian.MOD_ID + ".endtallgrass");
         setRegistryName(REG_NAME);
     }
     

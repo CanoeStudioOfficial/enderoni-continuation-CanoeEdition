@@ -1,11 +1,11 @@
 package fluke.stygian.block;
 
 import fluke.stygian.CreativeTabStygian;
+import fluke.stygian.Stygian;
 import fluke.stygian.block.fluid.ModBlockFluidClassic;
 import fluke.stygian.block.fluid.ModFluids;
 import fluke.stygian.block.item.ItemEndBone;
 import fluke.stygian.block.item.ItemEndBoneMeal;
-import fluke.stygian.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -20,8 +20,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.registries.IForgeRegistry;
 
-@GameRegistry.ObjectHolder(Reference.MOD_ID)
-@Mod.EventBusSubscriber(modid = Reference.MOD_ID)
+@GameRegistry.ObjectHolder(Stygian.MOD_ID)
+@Mod.EventBusSubscriber(modid = Stygian.MOD_ID)
 public class ModBlocks {
     @GameRegistry.ObjectHolder(BlockEndLog.REG_NAME)
     public static BlockEndLog endLog;

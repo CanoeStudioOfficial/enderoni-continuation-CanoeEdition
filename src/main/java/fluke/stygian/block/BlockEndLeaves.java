@@ -1,10 +1,6 @@
 package fluke.stygian.block;
 
-import java.util.Random;
-
-import javax.annotation.Nullable;
-
-import fluke.stygian.util.Reference;
+import fluke.stygian.Stygian;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockPlanks.EnumType;
 import net.minecraft.block.properties.IProperty;
@@ -28,6 +24,8 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import javax.annotation.Nullable;
+import java.util.Random;
 public class BlockEndLeaves extends BlockLeaves
 {
 	public static final String REG_NAME = "endleaves";
@@ -36,7 +34,7 @@ public class BlockEndLeaves extends BlockLeaves
 	{
 		//TODO hey, hey, hey... check out that decay
         this.setDefaultState(this.blockState.getBaseState().withProperty(CHECK_DECAY, Boolean.valueOf(false)).withProperty(DECAYABLE, Boolean.valueOf(true)));
-        setTranslationKey(Reference.MOD_ID + ".endleaves");
+        setTranslationKey(Stygian.MOD_ID + ".endleaves");
 
         setRegistryName(REG_NAME);
 	}

@@ -1,7 +1,7 @@
 package fluke.stygian.block.item;
 
+import fluke.stygian.Stygian;
 import fluke.stygian.entity.EntityEndSkeleton;
-import fluke.stygian.util.Reference;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -24,7 +24,7 @@ public class ItemEndSkeletonSpawnEgg extends Item {
 
     public ItemEndSkeletonSpawnEgg() {
         super();
-        setTranslationKey(Reference.MOD_ID + ".end_skeleton_spawn_egg");
+        setTranslationKey(Stygian.MOD_ID + ".end_skeleton_spawn_egg");
         setRegistryName(REG_NAME);
     }
 

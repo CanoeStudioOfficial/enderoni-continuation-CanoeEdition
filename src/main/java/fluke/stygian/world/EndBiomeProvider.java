@@ -1,11 +1,5 @@
 package fluke.stygian.world;
 
-import java.util.List;
-
-import javax.annotation.Nullable;
-
-import com.google.common.collect.Lists;
-
 import fluke.stygian.world.genlayers.EndGenLayer;
 import net.minecraft.crash.CrashReport;
 import net.minecraft.crash.CrashReportCategory;
@@ -18,6 +12,8 @@ import net.minecraft.world.biome.BiomeCache;
 import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.gen.layer.GenLayer;
 import net.minecraft.world.gen.layer.IntCache;
+
+import javax.annotation.Nullable;
 
 public class EndBiomeProvider extends BiomeProvider {
 	

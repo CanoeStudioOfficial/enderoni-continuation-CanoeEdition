@@ -1,15 +1,14 @@
 package fluke.stygian.block.fluid;
 
-import fluke.stygian.util.Reference;
+import fluke.stygian.Stygian;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.FluidRegistry;
-
 public class ModFluids 
 {
 	
 	public static final EnderFluid ACID = (EnderFluid) new EnderFluid("endacid",
-			new ResourceLocation(Reference.MOD_ID, "endacid_still"), 
-			new ResourceLocation(Reference.MOD_ID, "endacid_flow"))
+			new ResourceLocation(Stygian.MOD_ID, "endacid_still"),
+			new ResourceLocation(Stygian.MOD_ID, "endacid_flow"))
 					.setHasBucket(true)
 					.setDensity(1100)
 					.setGaseous(false)

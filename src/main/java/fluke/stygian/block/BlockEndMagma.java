@@ -1,8 +1,6 @@
 package fluke.stygian.block;
 
-import java.util.Random;
-
-import fluke.stygian.util.Reference;
+import fluke.stygian.Stygian;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -20,6 +18,7 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import java.util.Random;
 public class BlockEndMagma extends Block
 {
 	public static final String REG_NAME = "endmagma";
@@ -32,7 +31,7 @@ public class BlockEndMagma extends Block
         this.setTickRandomly(true);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.STONE);
-        setTranslationKey(Reference.MOD_ID + ".endmagma");
+        setTranslationKey(Stygian.MOD_ID + ".endmagma");
 		setRegistryName(REG_NAME);
     }
 	

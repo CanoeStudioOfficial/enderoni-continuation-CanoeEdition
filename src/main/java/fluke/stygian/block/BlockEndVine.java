@@ -1,6 +1,6 @@
 package fluke.stygian.block;
 
-import fluke.stygian.util.Reference;
+import fluke.stygian.Stygian;
 import net.minecraft.block.BlockVine;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
@@ -8,7 +8,6 @@ import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-
 public class BlockEndVine extends BlockVine
 {
 	public static final String REG_NAME = "endvine";
@@ -17,7 +16,7 @@ public class BlockEndVine extends BlockVine
     {
         super();
         this.setCreativeTab(CreativeTabs.DECORATIONS);
-        setTranslationKey(Reference.MOD_ID + ".endvine");
+        setTranslationKey(Stygian.MOD_ID + ".endvine");
         setRegistryName(REG_NAME);
     }
 	

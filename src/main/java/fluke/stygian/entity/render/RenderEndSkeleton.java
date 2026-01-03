@@ -1,8 +1,8 @@
 package fluke.stygian.entity.render;
 
+import fluke.stygian.Stygian;
 import fluke.stygian.entity.EntityEndSkeleton;
 import fluke.stygian.entity.model.ModelEndSkeleton;
-import fluke.stygian.util.Reference;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderBiped;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -28,7 +28,7 @@ public class RenderEndSkeleton extends RenderBiped<EntityEndSkeleton> {
 
     @Override
     protected ResourceLocation getEntityTexture(EntityEndSkeleton entity) {
-        return new ResourceLocation(Reference.MOD_ID, "textures/entity/entity_end_skeleton.png");
+        return new ResourceLocation(Stygian.MOD_ID, "textures/entity/entity_end_skeleton.png");
     }
 
     public static class Factory implements IRenderFactory<EntityEndSkeleton> {

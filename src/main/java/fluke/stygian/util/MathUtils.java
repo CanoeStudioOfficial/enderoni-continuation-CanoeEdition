@@ -1,10 +1,10 @@
 package fluke.stygian.util;
 
+import net.minecraft.util.math.BlockPos;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
-
-import net.minecraft.util.math.BlockPos;
 
 public class MathUtils 
 {

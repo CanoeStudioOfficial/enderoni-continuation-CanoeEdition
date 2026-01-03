@@ -1,7 +1,5 @@
 package fluke.stygian.world.biomes;
 
-import java.util.Random;
-
 import fluke.stygian.block.ModBlocks;
 import fluke.stygian.config.Configs;
 import fluke.stygian.entity.EntityEndSkeleton;
@@ -24,6 +22,8 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+
+import java.util.Random;
 
 public class BiomeEndVolcano extends Biome
 {

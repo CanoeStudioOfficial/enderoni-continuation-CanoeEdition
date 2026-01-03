@@ -1,14 +1,7 @@
 package fluke.stygian.util;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
-
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 import com.google.common.collect.Lists;
-
+import fluke.stygian.Stygian;
 import fluke.stygian.block.ModBlocks;
 import fluke.stygian.world.feature.WorldGenEndLake;
 import fluke.stygian.world.feature.WorldGenEndVolcano;
@@ -20,6 +13,12 @@ import net.minecraft.init.Blocks;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
 
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+
 public class DebugCommand extends CommandBase 
 {
 	private final List<String> aliases;
@@ -29,7 +28,7 @@ public class DebugCommand extends CommandBase
 
 	public DebugCommand()
 	{
-        aliases = Lists.newArrayList(Reference.MOD_ID, "debugDeco", "dd");
+        aliases = Lists.newArrayList(Stygian.MOD_ID, "debugDeco", "dd");
     }
 	
 	@Override

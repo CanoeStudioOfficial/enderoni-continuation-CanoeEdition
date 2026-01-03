@@ -1,12 +1,12 @@
 package fluke.stygian.world.feature;
 
-import java.util.Random;
-
 import fluke.stygian.block.ModBlocks;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;
+
+import java.util.Random;
 
 public class WorldGenEndCactus extends WorldGenerator
 {

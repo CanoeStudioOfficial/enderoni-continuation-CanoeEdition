@@ -1,15 +1,12 @@
 package fluke.stygian.world;
 
-import javax.annotation.Nullable;
-
-import net.minecraft.init.Biomes;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.WorldProviderEnd;
 import net.minecraft.world.WorldServer;
-import net.minecraft.world.biome.BiomeProvider;
-import net.minecraft.world.biome.BiomeProviderSingle;
 import net.minecraft.world.end.DragonFightManager;
 import net.minecraft.world.gen.IChunkGenerator;
+
+import javax.annotation.Nullable;
 
 public class WorldProviderEndBiomes extends WorldProviderEnd 
 {

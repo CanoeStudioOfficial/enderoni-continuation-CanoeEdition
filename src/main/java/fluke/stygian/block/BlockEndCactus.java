@@ -1,8 +1,6 @@
 package fluke.stygian.block;
 
-import java.util.Random;
-
-import fluke.stygian.util.Reference;
+import fluke.stygian.Stygian;
 import net.minecraft.block.Block;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.SoundType;
@@ -29,6 +27,8 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import java.util.Random;
+
 public class BlockEndCactus extends Block implements IGrowable
 {
 	public static final String REG_NAME = "endcactus";
@@ -42,7 +42,7 @@ public class BlockEndCactus extends Block implements IGrowable
         this.setCreativeTab(CreativeTabs.DECORATIONS);
         this.setHardness(0.4F);
         this.setSoundType(SoundType.CLOTH);
-        setTranslationKey(Reference.MOD_ID + ".endcactus");
+        setTranslationKey(Stygian.MOD_ID + ".endcactus");
 
         setRegistryName(REG_NAME);
         setTickRandomly(true);
